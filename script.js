@@ -114,10 +114,7 @@ function calcUr(){
     const C = Number(document.querySelector("#C").value);
 
     const ur = new Uravnenie(A, B, C);
-    //console.log(ur.chastnoeReshenie());
     console.log("НОД: ", ur.NOD());
     document.querySelector("#output").innerHTML = ur.outputDiafant();
     console.log(ur.outputDiafant())
-    
-    //Uravnenie.calc(odds);
 }
