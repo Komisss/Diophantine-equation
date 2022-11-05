@@ -108,6 +108,9 @@ class Uravnenie {
     }
 }
 
+if (window.jQuery) alert("jQuery подключен");
+else alert("jQuery не подключен");
+
 function calcUr(){
     const A = Number(document.querySelector("#A").value);
     const B = Number(document.querySelector("#B").value);
