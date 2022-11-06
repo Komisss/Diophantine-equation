@@ -114,6 +114,12 @@ function calcUr(){
     const C = Number(document.querySelector("#C").value);
 
     const outputField = document.querySelector("#output");
+
+    if(document.querySelector("#A").value == "" || document.querySelector("#B").value == "" || document.querySelector("#C").value == ""){
+        outputField.innerHTML = "Поля не должны оставаться пустыми!";
+        return;
+    }    
+
     if(A == 0 || B == 0){
         outputField.innerHTML = "Числа A и B должны быть натуральными!";
         return;
