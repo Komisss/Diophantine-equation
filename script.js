@@ -109,12 +109,20 @@ class Uravnenie {
 }
 
 function calcUr(){
+    debugger;   
     const A = Number(document.querySelector("#A").value);
     const B = Number(document.querySelector("#B").value);
     const C = Number(document.querySelector("#C").value);
 
+    const outputField = document.querySelector("#output");
+    if(A == 0 || B == 0){
+        outputField.innerHTML = "Числа A и B должны быть натуральными!";
+        return;
+    }
+
     const ur = new Uravnenie(A, B, C);
     console.log("НОД: ", ur.NOD());
-    document.querySelector("#output").innerHTML = ur.outputDiafant();
+    outputField.innerHTML = ur.outputDiafant();
     console.log(ur.outputDiafant())
 }
+

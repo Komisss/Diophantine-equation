@@ -17,11 +17,11 @@
         <div class="inputForm">
             <div class="uravnenie">
                 <p> 
-                    <input type="text" id="A" class="form" name="name" required minlength="4" maxlength="8" size="10"  onkeydown="this.style.width = ((this.value.length + 1) * 1) + 'rem';" onkeyup="onkeydown()" onkeypress="onkeydown()" onchange="onkeydown()">
+                    <input type="text" id="A" class="form" name="name" required minlength="1" maxlength="8" size="10"  onkeydown="this.style.width = ((this.value.length + 1) * 1) + 'rem';" onkeyup="onkeydown()" onkeypress="onkeydown()" onchange="onkeydown()">
                     x + 
-                    <input type="text" id="B" class="form" name="name" required minlength="4" maxlength="8" size="10"  onkeydown="this.style.width = ((this.value.length + 1) * 1) + 'rem';" onkeyup="onkeydown()" onkeypress="onkeydown()" onchange="onkeydown()">
+                    <input type="text" id="B" class="form" name="name" required minlength="1" maxlength="8" size="10"  onkeydown="this.style.width = ((this.value.length + 1) * 1) + 'rem';" onkeyup="onkeydown()" onkeypress="onkeydown()" onchange="onkeydown()">
                     y = 
-                    <input type="text" id="C" class="form" name="name" required minlength="4" maxlength="8" size="10"  onkeydown="this.style.width = ((this.value.length + 1) * 1) + 'rem';" onkeyup="onkeydown()" onkeypress="onkeydown()" onchange="onkeydown()">
+                    <input type="text" id="C" class="form" name="name" required minlength="1" maxlength="8" size="10"  onkeydown="this.style.width = ((this.value.length + 1) * 1) + 'rem';" onkeyup="onkeydown()" onkeypress="onkeydown()" onchange="onkeydown()">
                 </p>
             </div>
             <button onclick="calcUr()">Посчитать</button>
@@ -30,5 +30,6 @@
             <textarea name="output" id="output" cols="30" rows="10" disabled></textarea>
         </div>
     </div>
+    <script src="checkInput.js"></script>
 </body>
 </html>
