@@ -109,7 +109,6 @@ class Uravnenie {
 }
 
 function calcUr(){
-    debugger;   
     const A = Number(document.querySelector("#A").value);
     const B = Number(document.querySelector("#B").value);
     const C = Number(document.querySelector("#C").value);
